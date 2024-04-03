@@ -169,7 +169,7 @@
 
   .green-row,
   .blue-row {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .table-wrapper table div {
@@ -180,7 +180,6 @@
   .table-wrapper thead,
   .table-wrapper th {
     height: 50px!important;
-    /* background-color: red; */
   }
 
   .table-wrapper td {
@@ -196,44 +195,21 @@
 
   .table-wrapper th {
     font-size: 10px;
-    width: 60px;
   }
 
-  .vertical-flip {
-    -ms-writing-mode: tb-lr;
-    -webkit-writing-mode: tb-lr;
-    -moz-writing-mode: tb-lr;
-    writing-mode: tb-lr;
-
-    -ms-writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
-    -moz-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-
-    -ms-writing-mode: sideways-rl;
-    -webkit-writing-mode: sideways-rl;
-    -moz-writing-mode: sideways-rl;
-    writing-mode: sideways-rl;
-
-    writing-mode: vertical-rl;
-    /* -moz-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    transform: scale(1, 1); */
-    text-orientation: mixed;
-    height: 200px;
+  table {
+    border-spacing: 8px;
   }
 
-  .vertical-image {
-    transform: rotate(90deg);
-    margin-top: 16px;
+  .table-wrapper table {
+    border-collapse: initial;
   }
 
-  .vertical-image-l {
-    transform: rotate(-90deg);
-    margin-top: 16px;
-  }
+  .table-wrapper th,
+.table-wrapper td {
+  width: 13px; 
+}
+  
 
   /* program */
 
@@ -554,9 +530,14 @@
 }
 
 @media (max-width: 575px) {
-  .table-wrapper th,
-  .table-wrapper td {
-    padding: 8px;
+
+  .container-section {
+    width: 95%;
+    margin: auto;
+  }
+
+  .table-wrapper th {
+    padding: 0px;
   }
 
   .diploma-card {

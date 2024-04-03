@@ -428,7 +428,6 @@ margin-bottom: 16px;
 }
 
 .table-wrapper th {
-  background-color: #f0f0f0; 
   font-weight: bold;
 }
 
@@ -501,12 +500,14 @@ span.step {
   background-color: #00ff94;
   border-radius: 50%;
   width: 30px;
+  min-width: 30px;
+  max-width: 30px;
   height: 30px;
   font-size: 20px;
   font-weight: 800;
   line-height: 18px;
   border: none;
-  align-self: center;
+  align-self: start;
 }
 
 .program-item p {
