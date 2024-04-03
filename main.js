@@ -524,26 +524,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const lgTables = document.querySelectorAll(".lg-table .table-wrapper");
     const smTables = document.querySelectorAll(".sm-table .table-wrapper");
 
-    // Function to show the first table based on screen size
     const showInitialTable = () => {
         const initialTable = window.innerWidth > 724 ? lgTables[0] : smTables[0];
         initialTable.style.display = "block";
     };
 
-    // Hide all tables except the first one
     lgTables.forEach((table, index) => {
         if (index !== 0) {
             table.style.display = "none";
         }
     });
 
-    // Call the function to show the initial table
     showInitialTable();
 
-    // Add click event listeners to buttons
     buttons.forEach((button, index) => {
         button.addEventListener("click", function() {
-            // Determine which set of tables to work with based on screen size
             const tables = window.innerWidth > 724 ? lgTables : smTables;
 
             // Hide all tables
@@ -551,17 +546,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 table.style.display = "none";
             });
 
-            // Show the corresponding table
             tables[index].style.display = "block";
         });
     });
 
-    // Adjust display of tables based on screen size when window is resized
     window.addEventListener("resize", function() {
         const tables = window.innerWidth > 724 ? lgTables : smTables;
         const visibleTable = document.querySelector(".table-wrapper[style*='display: block;']");
 
-        // Hide all tables except the currently visible one
         tables.forEach(table => {
             if (table !== visibleTable) {
                 table.style.display = "none";
