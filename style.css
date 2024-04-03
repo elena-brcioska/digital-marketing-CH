@@ -518,6 +518,10 @@ span.step {
   margin-bottom: 0;
 }
 
+.program-item p span {
+  font-size: 14px;
+}
+
 .program-section .modal-content {
   padding: 50px;
 }
@@ -1281,6 +1285,10 @@ span.step {
   border: 1px solid rgba(5, 18, 56, 0.2);
   margin-bottom: 24px;
   font-size: 16px;
+}
+
+.register-iframe {
+  overflow-y: hidden;
 }
 
 /* footer */
