@@ -188,7 +188,6 @@
 
   .vertical-flip {
     writing-mode: vertical-lr;
-    text-orientation: sideways;
     transform: rotate(180deg);
   }
 
@@ -260,7 +259,7 @@
     display: block;
   }
 
-  .internship img.sm-image {
+  .internship div.sm-image img {
     align-self: center;
     width: 100%;
   }
@@ -428,7 +427,16 @@
   .mentor-card .mentor-body {
     flex-direction: row;
     gap: 16px;
-    border-bottom: 1px solid rgba(5, 18, 56, 0.2);
+    border-bottom: none;
+  }
+
+  .mentor-card img {
+    align-self: center;
+    width: 100%;
+  }
+
+  .mentor-card .student-testimonial {
+    margin-top: 16px;
   }
 
   /* offers */

@@ -612,8 +612,9 @@ span.step {
 
 .internship {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 16px;
+  gap: 50px;
 }
 
 .internship h2 {
@@ -623,6 +624,10 @@ span.step {
 
 .internship > div {
   width: 50%;
+}
+
+.internship > div  div {
+  margin-bottom: 24px;
 }
 
 .internship p {
@@ -646,7 +651,8 @@ span.step {
   margin: 0;
 }
 
-.internship img.lg-image {
+.internship img.lg-image,
+.internship div.sm-image img {
   align-self: center;
   width: 100%;
 }
@@ -923,7 +929,7 @@ span.step {
 }
 .mentor-card img {
   align-self: center;
-  width: 100%;
+  width: 200px;
 }
 
 .mentor-card p {
