@@ -438,6 +438,20 @@ margin-bottom: 16px;
   border-radius: 30px;
 }
 
+.table-wrapper.red .red-row {
+  background-color: #FF4A4A;
+  color: #051238;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.table-wrapper.yellow .yellow-row {
+  background-color: #FEA500;
+  color: #051238;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
 .table-wrapper .blue-row {
   background-color: #051238;
   color: #ffffff;

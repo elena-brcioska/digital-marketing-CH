@@ -151,6 +151,10 @@
 
   /* comparison */
 
+  .comparison {
+    margin: 56px auto 0;
+  }
+
   .table--row.table--header p {
     font-size: 18px;
   }
@@ -178,7 +182,8 @@
   }
 
   .green-row,
-  .blue-row {
+  .red-row,
+  .yellow-row {
     font-size: 9px;
   }
 
@@ -581,7 +586,6 @@
 @media (max-width: 575px) {
   .container-section {
     width: 95%;
-    margin: auto;
   }
 
   .table-wrapper th {

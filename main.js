@@ -519,6 +519,31 @@ window._load_script = function(url, callback, isSubmit) {
     addEvent(form_to_submit, 'submit', form_submit);
 })();
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Initially hide all tables except the first one
+    const tables = document.querySelectorAll(".table-wrapper");
+    tables.forEach((table, index) => {
+        if (index !== 0) {
+            table.style.display = "none";
+        }
+    });
+
+    // Add click event listeners to buttons
+    const buttons = document.querySelectorAll(".indicators button");
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", function() {
+            // Hide all tables
+            tables.forEach(table => {
+                table.style.display = "none";
+            });
+
+            // Show the corresponding table
+            tables[index].style.display = "block";
+        });
+    });
+});
+
+
 // testimonials glide
 
 const configTestimonials = {
