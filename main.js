@@ -524,12 +524,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const lgTables = document.querySelectorAll(".lg-table .table-wrapper");
     const smTables = document.querySelectorAll(".sm-table .table-wrapper");
 
+    // Function to show the first table based on screen size
+    const showInitialTable = () => {
+        const initialTable = window.innerWidth > 724 ? lgTables[0] : smTables[0];
+        initialTable.style.display = "block";
+    };
+
     // Hide all tables except the first one
     lgTables.forEach((table, index) => {
         if (index !== 0) {
             table.style.display = "none";
         }
     });
+
+    // Call the function to show the initial table
+    showInitialTable();
 
     // Add click event listeners to buttons
     buttons.forEach((button, index) => {
@@ -560,6 +569,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
 
 
 // testimonials glide
