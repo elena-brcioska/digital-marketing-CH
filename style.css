@@ -630,6 +630,10 @@ span.step {
   margin-bottom: 24px;
 }
 
+.internship > div  div img {
+  align-self: center;
+}
+
 .internship p {
   color: rgba(5, 18, 56, 0.8);
   font-size: 16px;
