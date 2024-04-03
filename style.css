@@ -1289,7 +1289,7 @@ span.step {
 }
 
 .register-iframe {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* footer */
