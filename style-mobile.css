@@ -140,6 +140,10 @@
 
   /* about */
 
+  .about {
+    padding: 15% 0 0;
+  }
+
   .about .card h5 {
     font-size: 18px;
   }
@@ -398,6 +402,10 @@
     flex-basis: 100%;
   }
 
+  .after-academy > div {
+    flex-basis: 100%;
+  }
+
   .after-academy h3 {
     font-size: 24px !important;
   }
@@ -486,6 +494,10 @@
   }
 
   /* events */
+
+  .events  button {
+    margin: auto;
+  }
 
   .events h2 {
     margin-bottom: 32px;

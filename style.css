@@ -283,7 +283,7 @@ margin-bottom: 16px;
 /* about */
 
 .about {
-  padding: 8% 0;
+  padding: 8% 0 0;
 }
 
 .about .card {
@@ -467,15 +467,20 @@ margin-bottom: 16px;
   margin-right: 8px;
 }
 
-.table-section .indicators span {
-  font-weight: bold;
+.table-section .indicators button {
+  border: none;
+  background: transparent;
 }
 
 /* program */
 
+.program-section {
+  margin-top: 24px;
+}
+
 .program-section h2 {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
 span.step {
@@ -638,7 +643,7 @@ span.step {
 }
 
 .internship h2 {
-  margin: 24px 0;
+  margin: 48px 0 24px;
   text-align: left;
 }
 
@@ -693,6 +698,10 @@ span.step {
 
 .testimonials {
   padding: 8% 0;
+}
+
+.testimonials h2 {
+margin-bottom: 48px;
 }
 
 .testimonials .testimonial-card {
@@ -886,6 +895,10 @@ span.step {
   margin-top: 8%;
 }
 
+.after-academy > div {
+  flex-basis: 50%;
+}
+
 .after-academy h3 {
   color: #051238;
   font-size: 40px !important;
@@ -980,6 +993,20 @@ span.step {
 
 .student-testimonial p span {
   font-weight: 800;
+}
+
+/* real experiences */
+
+.real-experiences {
+  padding: 5% 0 0;
+}
+
+.real-experiences h2 {
+  margin-bottom: 48px;
+}
+
+.real-experiences img {
+  width: 100%;
 }
 
 /* offers */
