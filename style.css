@@ -506,6 +506,7 @@ span.step {
   font-weight: 800;
   line-height: 18px;
   border: none;
+  align-self: center;
 }
 
 .program-item p {
