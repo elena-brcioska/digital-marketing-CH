@@ -399,12 +399,12 @@ margin-bottom: 16px;
 
 /* TABLE */
 
-.sm-table {
-  display: none;
-}
-
 .lg-table {
   display: block;
+}
+
+.sm-table {
+  display: none;
 }
 
 .table-wrapper {
