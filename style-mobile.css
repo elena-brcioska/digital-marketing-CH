@@ -172,6 +172,10 @@
     font-size: 10px;
   }
 
+  .table-wrapper {
+    height: 1000px;
+  }
+
   .table-wrapper th,
   .table-wrapper td {
     padding: 12px;
