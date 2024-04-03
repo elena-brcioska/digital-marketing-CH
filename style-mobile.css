@@ -172,12 +172,8 @@
     font-size: 10px;
   }
 
-  .table-wrapper table {
-  }
-
   .table-wrapper table div {
     width: 100%;
-    /* height: 100%; */
     text-align: left;
   }
 
@@ -226,6 +222,7 @@
     -ms-transform: scale(1, 1);
     transform: scale(1, 1); */
     text-orientation: mixed;
+    height: 200px;
   }
 
   .vertical-image {
