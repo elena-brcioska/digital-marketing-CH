@@ -9,6 +9,16 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .events .card {
+    min-height: 450px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
+    margin-bottom: 16px;
+  }
+
 }
 
 @media only screen and (max-width: 1170px) {
@@ -174,12 +184,12 @@
 
   .table-wrapper table div {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   .table-wrapper thead,
   .table-wrapper th {
-    height: 50px!important;
+    height: 50px !important;
   }
 
   .table-wrapper td {
@@ -191,7 +201,6 @@
     -ms-hyphens: unset;
     hyphens: unset;
   }
-
 
   .table-wrapper th {
     font-size: 10px;
@@ -206,15 +215,14 @@
   }
 
   .table-wrapper th,
-.table-wrapper td {
-  width: 13px; 
-}
-  
+  .table-wrapper td {
+    width: 13px;
+  }
 
   /* program */
 
   .program-section {
-    margin-top: 50px!important;
+    margin-top: 50px !important;
   }
 
   .program {
@@ -455,6 +463,10 @@
     padding: 15% 0;
   }
 
+  .offers h2 {
+    margin-bottom: 32px;
+  }
+
   .offers .price-card button {
     font-size: 16px;
     padding: 16px 8px;
@@ -470,6 +482,10 @@
 
   /* events */
 
+  .events h2 {
+    margin-bottom: 32px;
+  }
+
   .events .card {
     min-height: 400px;
     margin-bottom: 16px;
@@ -478,6 +494,30 @@
   .events .card h5 {
     font-size: 18px;
   }
+
+  .events button {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 
   /* success-stories */
 
@@ -500,10 +540,6 @@
     height: auto;
   }
 
-  .register-iframe {
-    height: 700px;
-  }
-
   /* register */
 
   .register .register-wrapper {
@@ -514,8 +550,21 @@
     z-index: 0;
   }
 
+  .register h2 {
+    width: 100%;
+  }
+
+  .register p {
+    width: 100%;
+    font-size: 14px;
+  }
+
   .register .form-wrapper {
     padding: 16px;
+  }
+
+  .register-iframe {
+    height: 800px;
   }
 
   /* footer */
@@ -530,7 +579,6 @@
 }
 
 @media (max-width: 575px) {
-
   .container-section {
     width: 95%;
     margin: auto;

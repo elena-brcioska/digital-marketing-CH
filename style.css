@@ -987,6 +987,10 @@ span.step {
   position: relative;
 }
 
+.offers .price-card.american {
+  border: 1px solid #00FF94;
+}
+
 .offers .price-card h4 {
   color: #051238;
   font-size: 20px;
@@ -1012,19 +1016,51 @@ span.step {
   padding-bottom: 32px;
 }
 
+.offers .american .price-header {
+  border-bottom:  1px solid #00FF94;;
+  padding-bottom: 32px;
+}
+
+.offers .price-header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .offers .price-header span {
   color: rgba(5, 18, 56, 0.8);
   font-size: 14px;
   font-weight: 400;
 }
 
+.price-header span.crossed-out {
+  text-decoration: line-through;
+  color: #9BA0AF;
+} 
+
 .offers .price-body {
   padding: 32px 0;
-  min-height: 500px;
   border-bottom: 2px solid rgba(5, 18, 56, 0.2);
 }
 
-.offers .price-body div {
+.offers .american .price-body {
+  padding: 32px 0;
+  border-bottom: 1px solid #00FF94;
+}
+
+.offers .american .price-body p.price {
+  border-top: 1px solid #00FF94;
+  padding-top: 32px;
+}
+
+.offers .price-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+
+} 
+
+.offers .price-body div div {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1033,6 +1069,10 @@ span.step {
 
 .offers .price-body div p {
   margin: 0;
+}
+
+.offers .price-body p {
+  margin-top: 64px;
 }
 
 .offers .price-footer {
@@ -1055,6 +1095,15 @@ span.step {
   border: none;
   border-radius: 6px;
   margin-top: 56px;
+}
+
+.offers .most-popular button {
+  background-color: #FF4A4A;
+  color: #ffffff;
+}
+
+.offers .american button {
+  background-color: #FEA500;
 }
 
 .price-card .scholarship p {
@@ -1121,12 +1170,16 @@ span.step {
   text-align: center;
 }
 
+.events h2 {
+  margin-bottom: 64px;
+}
+
 .events h2 span {
   color: #0059ff;
 }
 
 .events .card {
-  min-height: 500px;
+  min-height: 530px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   background: #fff;
@@ -1151,6 +1204,7 @@ span.step {
 }
 
 .events button {
+  display: none;
   border-radius: 6px;
   background: #00ff94;
   color: #051238;
@@ -1161,7 +1215,7 @@ span.step {
 }
 
 .hidden {
-  display: none;
+  display: block;
 }
 
 .visible {
@@ -1219,6 +1273,7 @@ span.step {
 
 .video-message {
   text-align: center;
+  margin-bottom: 8%;
 }
 
 .video-message h2 {
@@ -1256,7 +1311,7 @@ span.step {
 /* register */
 
 .register {
-  padding: 8% 0;
+  padding: 5% 0;
 }
 
 .register h2 {
@@ -1264,6 +1319,14 @@ span.step {
   font-size: 40px;
   width: 70%;
   margin: 32px auto;
+}
+
+.register p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 70%;
+  margin: 0 auto 48px;
 }
 
 .register .register-wrapper {
