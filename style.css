@@ -221,7 +221,7 @@ margin-bottom: 16px;
 .form-wrapper::after {
   content: "";
   position: absolute;
-  background-color: #00ff94;
+  background-color: #0059FF;
   width: 400px;
   height: 100%;
   border-radius: 8px;
@@ -410,6 +410,10 @@ margin-bottom: 16px;
 .table-wrapper {
   overflow-x: auto;
   background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(5, 18, 56, 0.20);
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.10);
 }
 
 .table-wrapper table {
@@ -955,7 +959,7 @@ margin-bottom: 48px;
 .mentor-card {
   display: flex;
   gap: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .mentor-card h4 {
@@ -1441,7 +1445,7 @@ footer ul li a:hover {
 }
 
 footer ul li a.active {
-  color: #00FF94;
+  color: #0059FF;
   font-weight: 700;
 }
 

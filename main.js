@@ -519,6 +519,7 @@ window._load_script = function(url, callback, isSubmit) {
     addEvent(form_to_submit, 'submit', form_submit);
 })();
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".indicators button");
     const lgTables = document.querySelectorAll(".lg-table .table-wrapper");
@@ -541,7 +542,6 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             const tables = window.innerWidth > 724 ? lgTables : smTables;
 
-            // Hide all tables
             tables.forEach(table => {
                 table.style.display = "none";
             });

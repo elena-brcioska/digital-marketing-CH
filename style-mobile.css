@@ -487,10 +487,15 @@
 
   .price-card .scholarship p span {
     font-size: 18x;
+    line-height: 1;
   }
 
   .price-card .scholarship h3 {
     font-size: 24px;
+  }
+
+  .price-card .scholarship button {
+    font-size: 14px;
   }
 
   /* events */
