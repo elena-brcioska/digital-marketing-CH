@@ -221,7 +221,7 @@ margin-bottom: 16px;
 .form-wrapper::after {
   content: "";
   position: absolute;
-  background-color: #0059FF;
+  background-color: #00FF94;
   width: 400px;
   height: 100%;
   border-radius: 8px;
@@ -1445,7 +1445,7 @@ footer ul li a:hover {
 }
 
 footer ul li a.active {
-  color: #0059FF;
+  color: #00FF94;
   font-weight: 700;
 }
 
