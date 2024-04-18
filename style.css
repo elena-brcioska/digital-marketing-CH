@@ -122,7 +122,7 @@ button:hover {
   box-shadow: 0 25px 40px rgb(0 0 0 / 9%);
   border: 1px solid #42e8e0 !important;
   padding: 16px 16px 0 !important;
-  outline: none!important;
+  outline: none !important;
 }
 .dropdown-item {
   font-weight: 500;
@@ -153,40 +153,44 @@ button:hover {
   margin: 2% 0%;
   color: #ffffff;
   font-weight: 200;
-  font-size: 24px;
-  line-height: 1.0; /* 54px */
-
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
 }
 .hero h1 span {
-  font-weight: 700;
-  font-size: 48px;
-  
-}
-
-.hero h1 span.green {
   font-weight: 200;
-  color: #00ff94;
-  font-size: 24px;
 }
 
 .hero h2 {
-  color: #FFF;
-font-size: 26px;
-font-weight: 600;
-text-align: left;
-margin-bottom: 16px;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  line-height: 120%;
+  letter-spacing: -0.8px;
 }
 
+.hero h2 span.green {
+  font-weight: 200;
+  color: #00ff94;
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 16px;
+}
 
 .hero p {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
   text-align: left;
+  margin: 32px 0;
 }
 .hero p span {
-  color: #0059FF;
+  color: #0059ff;
   font-style: italic;
   font-weight: 800;
 }
@@ -221,7 +225,7 @@ margin-bottom: 16px;
 .form-wrapper::after {
   content: "";
   position: absolute;
-  background-color: #00FF94;
+  background-color: #00ff94;
   width: 400px;
   height: 100%;
   border-radius: 8px;
@@ -311,7 +315,7 @@ margin-bottom: 16px;
 }
 
 .comparison > h2 span {
-  color: #0059FF;
+  color: #0059ff;
 }
 
 .comparison-wrapper {
@@ -408,12 +412,13 @@ margin-bottom: 16px;
 }
 
 .table-wrapper {
+  min-height: 460px;
   overflow-x: auto;
   background: #ffffff;
   border-radius: 10px;
-  border: 1px solid rgba(5, 18, 56, 0.20);
-  background: #FFF;
-  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.10);
+  border: 1px solid rgba(5, 18, 56, 0.2);
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
 }
 
 .table-wrapper table {
@@ -428,7 +433,7 @@ margin-bottom: 16px;
   text-align: center;
   word-wrap: break-word;
   border: none;
-  width: calc(100% / 8); 
+  width: calc(100% / 8);
 }
 
 .table-wrapper th {
@@ -443,14 +448,14 @@ margin-bottom: 16px;
 }
 
 .table-wrapper.red .red-row {
-  background-color: #FF4A4A;
+  background-color: #ff4a4a;
   color: #051238;
   font-weight: bold;
   border-radius: 30px;
 }
 
 .table-wrapper.yellow .yellow-row {
-  background-color: #FEA500;
+  background-color: #fea500;
   color: #051238;
   font-weight: bold;
   border-radius: 30px;
@@ -655,11 +660,11 @@ span.step {
   width: 50%;
 }
 
-.internship > div  div {
+.internship > div div {
   margin-bottom: 24px;
 }
 
-.internship > div  div img {
+.internship > div div img {
   align-self: center;
 }
 
@@ -705,7 +710,7 @@ span.step {
 }
 
 .testimonials h2 {
-margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .testimonials .testimonial-card {
@@ -843,7 +848,7 @@ margin-bottom: 48px;
 }
 
 .diploma-card.dark {
-  background: linear-gradient(156deg, #051238 0%, #0E339E 192.36%);
+  background: linear-gradient(156deg, #051238 0%, #0e339e 192.36%);
 }
 
 .diploma-card.dark h3 {
@@ -861,11 +866,30 @@ margin-bottom: 48px;
 }
 
 .contests .card {
-  min-height: 550px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
+  margin-bottom: 24px;
+}
+
+.contests .card .card-title {
+  text-align: center;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.contests .card div:first-child {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px 36px;
+}
+
+.contests .card img {
+  align-self: center;
 }
 
 .contests .card .card-body {
@@ -1033,7 +1057,7 @@ margin-bottom: 48px;
 }
 
 .offers .price-card.american {
-  border: 1px solid #00FF94;
+  border: 1px solid #00ff94;
 }
 
 .offers .price-card h4 {
@@ -1062,7 +1086,7 @@ margin-bottom: 48px;
 }
 
 .offers .american .price-header {
-  border-bottom:  1px solid #00FF94;;
+  border-bottom: 1px solid #00ff94;
   padding-bottom: 32px;
 }
 
@@ -1079,8 +1103,8 @@ margin-bottom: 48px;
 
 .price-header span.crossed-out {
   text-decoration: line-through;
-  color: #9BA0AF;
-} 
+  color: #9ba0af;
+}
 
 .offers .price-body {
   padding: 32px 0;
@@ -1089,11 +1113,11 @@ margin-bottom: 48px;
 
 .offers .american .price-body {
   padding: 32px 0;
-  border-bottom: 1px solid #00FF94;
+  border-bottom: 1px solid #00ff94;
 }
 
 .offers .american .price-body p.price {
-  border-top: 1px solid #00FF94;
+  border-top: 1px solid #00ff94;
   padding-top: 32px;
 }
 
@@ -1102,8 +1126,7 @@ margin-bottom: 48px;
   flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
-
-} 
+}
 
 .offers .price-body div div {
   display: flex;
@@ -1143,12 +1166,12 @@ margin-bottom: 48px;
 }
 
 .offers .most-popular button {
-  background-color: #FF4A4A;
+  background-color: #ff4a4a;
   color: #ffffff;
 }
 
 .offers .american button {
-  background-color: #FEA500;
+  background-color: #fea500;
 }
 
 .price-card .scholarship p {
@@ -1445,7 +1468,7 @@ footer ul li a:hover {
 }
 
 footer ul li a.active {
-  color: #00FF94;
+  color: #00ff94;
   font-weight: 700;
 }
 
@@ -1457,7 +1480,7 @@ footer ul li a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.40);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   margin-top: 64px;
 }
 
