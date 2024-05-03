@@ -86,7 +86,7 @@ button:hover {
 
 /* navbar */
 .navbar-wrapper {
-  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
+  background: linear-gradient(110deg, #f5f5f5 0.1%, #fff 115.65%);
   box-shadow: 0px 20px 69px rgba(137, 108, 4, 0.1);
   backdrop-filter: blur(11px);
   top: 0;
@@ -109,10 +109,12 @@ button:hover {
   color: #292929;
 }
 .navbar-green a {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 15px;
-  color: #292929;
+  color: #051238;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.8px;
 }
 .dropdown-menu {
   left: unset !important;
@@ -148,33 +150,35 @@ button:hover {
 }
 
 .hero h1 {
-  line-height: 58px;
-  letter-spacing: 0.065em;
-  margin: 2% 0%;
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 48px;
-  line-height: 1;
+  color: var(--Black, #000);
+  font-family: Manrope;
+  font-size: 54px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
 }
 .hero h1 span {
   font-weight: 200;
 }
 
 .hero h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Manrope;
   font-size: 26px !important;
   font-weight: 500 !important;
   line-height: 120%;
   letter-spacing: -0.8px;
 }
 
-.hero h2 span.green {
-  font-weight: 200;
-  color: #00ff94;
+.hero h2 span.blue {
+  color: #0059ff;
+  font-size: 26px;
 }
 
 .hero h2 {
-  color: #fff;
+  color: #000;
   font-size: 26px;
   font-weight: 600;
   text-align: left;
@@ -182,7 +186,7 @@ button:hover {
 }
 
 .hero p {
-  color: #fff;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
@@ -199,9 +203,6 @@ button:hover {
   width: 50%;
   margin-right: 3%;
 }
-.header-left div {
-  margin: 20px 0px;
-}
 
 .header-right {
   width: 50%;
@@ -212,6 +213,34 @@ button:hover {
 
 .hero .container-section {
   display: flex;
+}
+
+.hero-left {
+  margin-top: 5%;
+}
+
+.hero-left div {
+  display: flex;
+  gap: 15px;
+  margin: 16px;
+}
+
+.hero-left div p {
+  color: #000;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.8px;
+  margin: 0;
+}
+
+.hero-left div p span {
+  background-image: url("images/circle.svg"); /* Specify the path to your background image */
+  background-size: 100% 100%;
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  padding: 20px 20px;
+  color: #000;
+  font-weight: 600;
 }
 
 .form-wrapper {
@@ -225,7 +254,7 @@ button:hover {
 .form-wrapper::after {
   content: "";
   position: absolute;
-  background-color: #00ff94;
+  background-color: #0059ff;
   width: 400px;
   height: 100%;
   border-radius: 8px;
@@ -263,13 +292,13 @@ button:hover {
   font-size: 14px;
 }
 .form-wrapper button {
-  background: #00ff94;
+  background: #0059ff;
   border-radius: 4px;
   padding: 11px 18px;
   font-weight: 900;
   font-size: 16px;
   line-height: 19px;
-  color: #051238;
+  color: #ffffff;
   border: none;
   margin: 2% 0%;
   width: 100%;
@@ -288,6 +317,10 @@ button:hover {
 
 .about {
   padding: 8% 0 0;
+}
+
+.about h2 {
+  margin-bottom: 66px;
 }
 
 .about .card {
@@ -440,22 +473,22 @@ button:hover {
   font-weight: bold;
 }
 
-.table-wrapper .green-row {
-  background-color: #00ff94;
-  color: #051238;
+.table-wrapper .black-row {
+  background-color: #000;
+  color: #fff;
   font-weight: bold;
   border-radius: 30px;
 }
 
-.table-wrapper.red .red-row {
-  background-color: #ff4a4a;
-  color: #051238;
+.table-wrapper.red .yellow-row {
+  background-color: #A66D00;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 30px;
 }
 
-.table-wrapper.yellow .yellow-row {
-  background-color: #fea500;
+.table-wrapper.yellow .green-row {
+  background-color: #00FF94;
   color: #051238;
   font-weight: bold;
   border-radius: 30px;
@@ -1056,16 +1089,20 @@ span.step {
   position: relative;
 }
 
-.offers .price-card.american {
-  border: 1px solid #00ff94;
+.offers .price-card.leadrship {
+  border: 1px solid #a66d00;
 }
 
 .offers .price-card h4 {
   color: #051238;
+  text-align: center;
+  line-height: 180%;
+  color: #051238;
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 32px 0;
+  margin: 32px 8px;
+  border-bottom: 1px solid rgba(5, 18, 56, 0.2);
 }
 
 .offers .price-card p {
@@ -1085,14 +1122,67 @@ span.step {
   padding-bottom: 32px;
 }
 
-.offers .american .price-header {
-  border-bottom: 1px solid #00ff94;
-  padding-bottom: 32px;
+.offers .price-header p {
+  color: #051238;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -1.2px;
+}
+
+.offers .price-header > div p {
+  text-align: center;
+  color: #0ace7c;
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -1.2px;
+}
+
+.offers .most-popular .price-header > div p {
+  color: #051238;
+}
+
+.offers .leadership .price-header > div p {
+  color: #A66D00;
+}
+
+.offers .price-header p span {
+  color: #051238;
+  font-size: 20px;
+}
+
+.offers .price-header p span.red-price {
+  color: rgba(245, 0, 0, 0.8);
+  font-weight: 400;
+  border: 1px solid red;
+  padding: 5px;
+  word-spacing: 4px;
 }
 
 .offers .price-header > div {
-  display: flex;
-  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #00ff94;
+  margin: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.offers .most-popular .price-header > div {
+  border: 1px solid #000;
+  background: #f5f5f5;
+}
+
+.offers .leadership .price-header > div {
+  border: 1px solid #a66d00;
+  background: #fcfbf7;
+}
+
+.offers .price-header > div img {
+  position: absolute;
+  left: 10px;
 }
 
 .offers .price-header span {
@@ -1111,21 +1201,17 @@ span.step {
   border-bottom: 2px solid rgba(5, 18, 56, 0.2);
 }
 
-.offers .american .price-body {
-  padding: 32px 0;
-  border-bottom: 1px solid #00ff94;
-}
-
-.offers .american .price-body p.price {
-  border-top: 1px solid #00ff94;
-  padding-top: 32px;
-}
-
 .offers .price-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
+}
+
+.offers .price-body p.financing {
+  color: #051238;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .offers .price-body div div {
@@ -1166,12 +1252,13 @@ span.step {
 }
 
 .offers .most-popular button {
-  background-color: #ff4a4a;
+  background-color: #000000;
   color: #ffffff;
 }
 
-.offers .american button {
-  background-color: #fea500;
+.offers .leadership button {
+  background-color: #a66d00;
+  color: #ffffff;
 }
 
 .price-card .scholarship p {
