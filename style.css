@@ -124,7 +124,7 @@ button:hover {
   box-shadow: 0 25px 40px rgb(0 0 0 / 9%);
   border: 1px solid #42e8e0 !important;
   padding: 16px 16px 0 !important;
-  outline: none !important;
+  outline: none!important;
 }
 .dropdown-item {
   font-weight: 500;
@@ -150,51 +150,49 @@ button:hover {
 }
 
 .hero h1 {
-  color: var(--Black, #000);
-  font-family: Manrope;
-  font-size: 54px;
-  font-style: normal;
+  line-height: 58px;
+  letter-spacing: 0.065em;
+  margin: 2% 0%;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 1;
   font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -2px;
-  margin-bottom: 28px;
 }
 .hero h1 span {
   font-weight: 200;
 }
 
 .hero h2 {
-  color: rgba(0, 0, 0, 0.8);
-  font-family: Manrope;
   font-size: 26px !important;
   font-weight: 500 !important;
   line-height: 120%;
   letter-spacing: -0.8px;
 }
 
-.hero h2 span.blue {
-  color: #0059ff;
-  font-size: 26px;
+.hero h2 span.green {
+  font-weight: 200;
+  color: #00ff94;
 }
 
 .hero h2 {
-  color: #000;
+  color: #fff;
   font-size: 26px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 16px;
 }
 
+
 .hero p {
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
   text-align: left;
-  margin: 32px 0;
 }
 .hero p span {
-  color: #0059ff;
+  color: #0059FF;
   font-style: italic;
   font-weight: 800;
 }
@@ -254,7 +252,7 @@ button:hover {
 .form-wrapper::after {
   content: "";
   position: absolute;
-  background-color: #0059ff;
+  background-color: #00ff94;
   width: 400px;
   height: 100%;
   border-radius: 8px;
@@ -348,7 +346,7 @@ button:hover {
 }
 
 .comparison > h2 span {
-  color: #0059ff;
+  color: #0059FF;
 }
 
 .comparison-wrapper {
@@ -445,13 +443,12 @@ button:hover {
 }
 
 .table-wrapper {
-  min-height: 460px;
   overflow-x: auto;
   background: #ffffff;
   border-radius: 10px;
-  border: 1px solid rgba(5, 18, 56, 0.2);
-  background: #fff;
-  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
+  border: 1px solid rgba(5, 18, 56, 0.20);
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.10);
 }
 
 .table-wrapper table {
@@ -466,7 +463,7 @@ button:hover {
   text-align: center;
   word-wrap: break-word;
   border: none;
-  width: calc(100% / 8);
+  width: calc(100% / 8); 
 }
 
 .table-wrapper th {
@@ -480,15 +477,15 @@ button:hover {
   border-radius: 30px;
 }
 
-.table-wrapper.red .yellow-row {
-  background-color: #A66D00;
-  color: #ffffff;
+.table-wrapper.red .red-row {
+  background-color: #ff4a4a;
+  color: #051238;
   font-weight: bold;
   border-radius: 30px;
 }
 
-.table-wrapper.yellow .green-row {
-  background-color: #00FF94;
+.table-wrapper.yellow .yellow-row {
+  background-color: #fea500;
   color: #051238;
   font-weight: bold;
   border-radius: 30px;
@@ -693,11 +690,11 @@ span.step {
   width: 50%;
 }
 
-.internship > div div {
+.internship > div  div {
   margin-bottom: 24px;
 }
 
-.internship > div div img {
+.internship > div  div img {
   align-self: center;
 }
 
@@ -743,7 +740,7 @@ span.step {
 }
 
 .testimonials h2 {
-  margin-bottom: 48px;
+margin-bottom: 48px;
 }
 
 .testimonials .testimonial-card {
@@ -881,7 +878,7 @@ span.step {
 }
 
 .diploma-card.dark {
-  background: linear-gradient(156deg, #051238 0%, #0e339e 192.36%);
+  background: linear-gradient(156deg, #051238 0%, #0E339E 192.36%);
 }
 
 .diploma-card.dark h3 {
@@ -899,30 +896,11 @@ span.step {
 }
 
 .contests .card {
+  min-height: 550px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
-  margin-bottom: 24px;
-}
-
-.contests .card .card-title {
-  text-align: center;
-  width: 100%;
-  padding: 24px 0;
-}
-
-.contests .card div:first-child {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 16px 36px;
-}
-
-.contests .card img {
-  align-self: center;
 }
 
 .contests .card .card-body {
@@ -1089,8 +1067,8 @@ span.step {
   position: relative;
 }
 
-.offers .price-card.leadrship {
-  border: 1px solid #a66d00;
+.offers .price-card.american {
+  border: 1px solid #00ff94;
 }
 
 .offers .price-card h4 {
@@ -1122,44 +1100,9 @@ span.step {
   padding-bottom: 32px;
 }
 
-.offers .price-header p {
-  color: #051238;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 110%;
-  letter-spacing: -1.2px;
-}
-
-.offers .price-header > div p {
-  text-align: center;
-  color: #0ace7c;
-  font-family: Manrope;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 110%;
-  letter-spacing: -1.2px;
-}
-
-.offers .most-popular .price-header > div p {
-  color: #051238;
-}
-
-.offers .leadership .price-header > div p {
-  color: #A66D00;
-}
-
-.offers .price-header p span {
-  color: #051238;
-  font-size: 20px;
-}
-
-.offers .price-header p span.red-price {
-  color: rgba(245, 0, 0, 0.8);
-  font-weight: 400;
-  border: 1px solid red;
-  padding: 5px;
-  word-spacing: 4px;
+.offers .american .price-header {
+  border-bottom: 1px solid #00ff94;
+  padding-bottom: 32px;
 }
 
 .offers .price-header > div {
@@ -1193,12 +1136,22 @@ span.step {
 
 .price-header span.crossed-out {
   text-decoration: line-through;
-  color: #9ba0af;
-}
+  color: #9BA0AF;
+} 
 
 .offers .price-body {
   padding: 32px 0;
   border-bottom: 2px solid rgba(5, 18, 56, 0.2);
+}
+
+.offers .american .price-body {
+  padding: 32px 0;
+  border-bottom: 1px solid #00ff94;
+}
+
+.offers .american .price-body p.price {
+  border-top: 1px solid #00ff94;
+  padding-top: 32px;
 }
 
 .offers .price-body {
@@ -1206,12 +1159,6 @@ span.step {
   flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
-}
-
-.offers .price-body p.financing {
-  color: #051238;
-  font-size: 20px;
-  font-weight: 800;
 }
 
 .offers .price-body div div {
@@ -1252,13 +1199,12 @@ span.step {
 }
 
 .offers .most-popular button {
-  background-color: #000000;
+  background-color: #ff4a4a;
   color: #ffffff;
 }
 
-.offers .leadership button {
-  background-color: #a66d00;
-  color: #ffffff;
+.offers .american button {
+  background-color: #fea500;
 }
 
 .price-card .scholarship p {
@@ -1555,7 +1501,7 @@ footer ul li a:hover {
 }
 
 footer ul li a.active {
-  color: #00ff94;
+  color: #00FF94;
   font-weight: 700;
 }
 
@@ -1567,7 +1513,7 @@ footer ul li a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.40);
   margin-top: 64px;
 }
 
