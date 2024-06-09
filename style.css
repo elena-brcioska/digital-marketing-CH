@@ -880,7 +880,7 @@ span.step {
 }
 
 .contests .card div:first-child {
-  height: 200px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -906,6 +906,7 @@ span.step {
 }
 
 .contests .step {
+  display: inline-block;
   position: relative;
   left: 50%;
   top: 10px;
@@ -1093,6 +1094,10 @@ span.step {
 .offers .price-header > div {
   display: flex;
   justify-content: space-between;
+}
+
+.offers .price-header > div div:nth-of-type(1) {
+  flex-basis: 50%;
 }
 
 .offers .price-header span {
