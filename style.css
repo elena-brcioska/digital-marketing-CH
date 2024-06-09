@@ -1201,10 +1201,16 @@ span.step {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 32px;
 }
 
 .price-card .scholarship h3 span {
   color: #0059ff;
+}
+
+.offers .row.padding-fix>* {
+  background-color: red;
+  padding-right: 0!important;
 }
 
 .price-card .scholarship div {
